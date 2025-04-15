@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Website</title>
+
+  <!-- Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Simple styling -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+      transition: background-color 0.3s ease;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Website</h1>
+  <p>Hello! I'm learning to build websites with HTML, CSS, and JavaScript.</p>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- JavaScript logic -->
+  <script>
+    let darkMode = false;
+
+    function toggleTheme() {
+      darkMode = !darkMode;
+      document.body.style.backgroundColor = darkMode ? '#222' : '#f4f4f4';
+      document.body.style.color = darkMode ? '#fff' : '#333';
+    }
+  </script>
+
+</body>
+</html>
